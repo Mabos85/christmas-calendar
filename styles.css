@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+body{
+    padding:0;
+    margin:0;
+    background: #4088CD;
+    font-family: 'Mountains of Christmas', cursive;
+    letter-spacing: 1px;
+}
+.date-container{
+    position: relative;
+    padding: 10px;
+    margin: 40px auto;
+    width: 360px;
+    text-align:center;
+    background: #ff0030;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.3em;
+    border: 2px dashed #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 0 4px #ff0030, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+    text-shadow: -1px -1px #aa3030;
+    font-weight: normal;
+     
+}
+
+.container {
+    width: 800px;
+    height: 900px;
+    border: 3px solid black;
+    margin: 15px auto;
+    background-image: url("./img/calendar.png");
+    background-size: cover;
+    box-shadow: 6px 6px 20px gray;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+        "door9 door6 door11 door7"
+        "door3 door20 door16 door2"
+        "door14 door12 door19 door15"
+        "door22 door1 door5 door23"
+        "door17 door10 door24 door21"
+        "door8 door18 door4 door13";
+}
+
+.image {
+    background-image: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.text {
+    height: 100%;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    border: 1px solid #000;
+    transition: opacity 1.5s;
+}
+
