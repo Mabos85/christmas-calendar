@@ -8,7 +8,7 @@ let dateContainer = document.querySelector(".date-container");
 function displayDate(){
     console.log(n);
     if(n <= 24){
-        dateContainer.innerHTML = 'Dagens lucka är nummer ' + n;
+        dateContainer.innerHTML = 'Dagens lucka är nummer: ' + n;
         
     } else {
         dateContainer.innerHTML = 'Julafton har redan varit';
